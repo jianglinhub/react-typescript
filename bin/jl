@@ -1,0 +1,13 @@
+#!/usr/local/bin/node
+
+const mockData = {
+  data: 'this is data',
+  result: {
+    title: 'This is a title'
+  }
+} 
+
+const json2ts = require('json2ts')
+const jsonContent = JSON.stringify(mockData)
+
+let result = json2ts.convert(jsonContent)
